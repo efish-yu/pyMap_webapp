@@ -30,10 +30,10 @@ def download():
     bounds = bound.split(',')
     bounds = list(map(float, bounds))
     print(DICT[mtype])
-    # process_latlng(bounds[0], bounds[1], bounds[2], bounds[3], zoom, name, DICT[mtype])
+    process_latlng(bounds[0], bounds[1], bounds[2], bounds[3], zoom, name, DICT[mtype])
 
     # special for download 18 level
-    process_latlng(23.86323358998692, 112.7691650390625, 22.411038440074023, 114.15343165397644, 18, name, DICT[mtype])
+    # process_latlng(23.86323358998692, 112.7691650390625, 22.411038440074023, 114.15343165397644, 18, name, DICT[mtype])
     # def process_latlng(north, west, south, east, zoom, output='mosaic', maptype="gaode.image"):
     # top left to lnglat result: { lng: 112.7691650390625, lat: 23.86323358998692 }
     # bottom right to lnglat result: { lng: 114.15343165397644, lat: 22.411038440074023 }

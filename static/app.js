@@ -54,7 +54,7 @@ function initMap() {
     var OpenTopoMap = new L.TileLayer("http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {})
     var esrisat = new L.TileLayer("http://server.arcgisonline.com/arcgis/rest/services/world_imagery/mapserver/tile/{z}/{y}/{x}", {})
     var google = new L.TileLayer("http://khm0.googleapis.com/kh?v=203&hl=zh-CN&&x={x}&y={y}&z={z}", {})
-    var googleStand = new L.TileLayer("http://mt0.google.cn/vt/lyrs=m@167000000&hl=zh-CN&gl=cn&x={x}&y={y}&z={z}", {})
+    var googleStand = new L.TileLayer("http://mt0.google.cn/vt/lyrs=m@167000000&hl=zh-CN&gl=cn&scale=2&x={x}&y={y}&z={z}", {})
 
     L.control.layers({
         "高德影像": gaodesat,
