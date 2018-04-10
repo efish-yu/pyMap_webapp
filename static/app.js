@@ -5,8 +5,8 @@ var map
 
 function initMap() {
     map = new L.Map("map", {
-        center: new L.LatLng(26.33280692289788, 114.78515624999999),
-        zoom: 7
+        center: new L.LatLng(23.128363, 113.305779),
+        zoom: 9
     })
 
     var mapbox = new L.TileLayer("https://a.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoidGF0aWFuYSIsImEiOiJjaW9nNWc2enkwMWk0dWRtM3Qwd3J5dHo2In0.42pdJNpJD8BAalQ3nM8KQg", {
@@ -54,9 +54,10 @@ function initMap() {
     var OpenTopoMap = new L.TileLayer("http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {})
     var esrisat = new L.TileLayer("http://server.arcgisonline.com/arcgis/rest/services/world_imagery/mapserver/tile/{z}/{y}/{x}", {})
     var google = new L.TileLayer("http://khm0.googleapis.com/kh?v=203&hl=zh-CN&&x={x}&y={y}&z={z}", {})
+    var googleStand = new L.TileLayer("http://mt0.google.cn/vt/lyrs=m@167000000&hl=zh-CN&gl=cn&scale=2&x={x}&y={y}&z={z}", {})
 
     L.control.layers({
-        "高德影像": gaodesat.addTo(map),
+        "高德影像": gaodesat,
         "天地图影像": tianditusat,
         "esrisat": esrisat,
         "MapQuest影像": mapquestsat,
@@ -80,7 +81,9 @@ function initMap() {
         "geoqRailway": geoqRailway,
         "StamenToner": StamenToner,
         "StamenWaterColor": StamenWaterColor,
-        "OpenTopoMap": OpenTopoMap
+        "OpenTopoMap": OpenTopoMap,
+        "googleStand": googleStand.addTo(map)
+
     }, {}, {collapsed: false}).addTo(map)
 }
 

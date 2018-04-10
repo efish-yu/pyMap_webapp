@@ -13,7 +13,7 @@ https://github.com/brandonxiang/pyMap_webapp
 
 ## 依赖
 
-- python 3.5
+- python 3.6.5
 - [Flask](https://github.com/pallets/flask)
 - [pyMap](https://github.com/brandonxiang/pyMap)
 - [Mapviewer](https://github.com/brandonxiang/MapViewer)
@@ -23,7 +23,7 @@ https://github.com/brandonxiang/pyMap_webapp
 ### Python 部分安装
 
 ```
-pip install -r requirement
+pip3 install -r requirements.txt
 ```
 
 ### Javascript 部分安装
