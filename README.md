@@ -15,7 +15,7 @@ ALPHA 0.13
 
 ## Dependencies
 
-- python 3.5
+- python 3.6.5
 - [Flask](https://github.com/pallets/flask)
 - [pyMap](https://github.com/brandonxiang/pyMap)
 - [Mapviewer](https://github.com/brandonxiang/MapViewer)
@@ -25,7 +25,7 @@ ALPHA 0.13
 ### Python Web Server Installation
 
 ```
-pip install -r requirement
+pip3 install -r requirements.txt
 ```
 
 ### Javascript Package Installation
